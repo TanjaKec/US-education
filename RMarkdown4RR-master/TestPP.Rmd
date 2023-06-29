@@ -1,0 +1,45 @@
+---
+title: "Untitled"
+author: "Tanja"
+date: "2023-06-29"
+output: powerpoint_presentation
+---
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+```{r packages, include=FALSE}
+library(dplyr)
+library(ggplot2)
+library(DT)
+library(here)
+```
+
+```{r, include = FALSE}
+source(here::here("R/script2.R"))
+```
+
+## R Markdown
+
+This is an R Markdown presentation. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document.
+
+## Slide with Bullets
+
+- Bullet 1
+- Bullet 2
+- Bullet 3
+
+## Slide with R Output
+
+```{r cars, echo = TRUE}
+summary(cars)
+```
+
+## Slide with Plot
+
+```{r demo, fig.asp=.8, fig.width=10, fig.cap="The caption 😃"}
+my_plot
+```
+
